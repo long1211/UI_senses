@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@use "sass:math";
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/static/Montserrat-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol,
+li {
+  list-style: none;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container a:hover {
+  text-decoration: none;
+}
+
+#more {
+  display: none;
+}
+
+#more1 {
+  display: none;
+}
+
+.active_height {
+  max-height: inherit !important;
+}
+
+.active_height_max {
+  max-height: 0 !important;
+}
+
+.container {
+  padding-left: 11.11111vw;
+  padding-right: 11.11111vw;
+}
+
+@media (max-width: 620px) {
+  .container {
+    padding-left: 4.83092vw;
+    padding-right: 4.83092vw;
+  }
+}
+
+footer {
+  background: #252525;
+}
+
+footer .wrapper_ft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.77778vw 0;
+}
+
+@media (max-width: 620px) {
+  footer .wrapper_ft {
+    padding: 6.03865vw 0;
+  }
+}
+
+footer .wrapper_ft .logo img {
+  width: 14.58333vw;
+  height: 5.55556vw;
+}
+
+@media (max-width: 620px) {
+  footer .wrapper_ft .logo img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+footer .wrapper_ft .social h4 {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 1.38889vw;
+  line-height: 1.66667vw;
+  margin-bottom: 1.38889vw;
+  color: #FFFFFF;
+}
+
+@media (max-width: 620px) {
+  footer .wrapper_ft .social h4 {
+    font-size: 3.86473vw;
+    line-height: 4.83092vw;
+    margin-bottom: 2.41546vw;
+  }
+}
+
+footer .wrapper_ft .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.38889vw;
+}
+
+@media (max-width: 620px) {
+  footer .wrapper_ft .social ul {
+    gap: 3.62319vw;
+  }
+}
+
+footer .wrapper_ft .social ul a {
+  display: block;
+}
+/*# sourceMappingURL=footer.css.map */

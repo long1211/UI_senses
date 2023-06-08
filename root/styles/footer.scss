@@ -1,0 +1,74 @@
+@import "general";
+
+.container {
+    padding-left: p(160);
+    padding-right: p(160);
+
+    @include MB {
+        padding-left: m(20);
+        padding-right: m(20);
+    }
+}
+
+footer {
+    background: #252525;
+
+    .wrapper_ft {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: p(40) 0;
+
+
+        @include MB {
+            padding: m(25) 0;
+        }
+
+        .logo {
+            img {
+                width: p(210);
+                height: p(80);
+
+                @include MB {
+                    width: 50%;
+                    height: auto;
+                }
+            }
+        }
+
+        .social {
+            h4 {
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: p(20);
+                line-height: p(24);
+                margin-bottom: p(20);
+                color: #FFFFFF;
+
+                @include MB {
+                    font-size: m(16);
+                    line-height: m(20);
+                    margin-bottom: m(10);
+                }
+
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: p(20);
+
+                @include MB {
+                    gap: m(15);
+                }
+
+                a {
+                    display: block;
+                }
+            }
+        }
+
+
+    }
+}

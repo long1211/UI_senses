@@ -20,7 +20,7 @@
     }
 
     background: #000;
-    padding: m(12) 0;
+    padding: m(8) 0;
 
     .header_mobile {
         display: flex;
@@ -31,8 +31,8 @@
         .logo {
             a {
                 img {
-                    width: m(136);
-                    height: m(52);
+                    width: m(126);
+                    height: m(42);
 
 
                 }
@@ -42,9 +42,9 @@
         nav {
             position: absolute;
             width: 100%;
-            height: calc(100vh - 70px);
+            height: calc(100vh - 60px);
             background: #252525;
-            top: m(80);
+            top: m(60);
             left: -100%;
             transition: 0.5s;
             z-index: 111;
@@ -114,8 +114,8 @@
         }
 
         .menu-toggle {
-            width: m(42);
-            height: m(42);
+            width: m(32);
+            height: m(32);
 
             img {
                 width: 100%;
@@ -123,6 +123,33 @@
             }
         }
     }
+}
+
+// =============  Arrow slider  =============
+
+.slick-arrow {
+    z-index: 1;
+    width: m(35);
+    height: m(35);
+}
+
+.slick-arrow:before {
+    font-size: m(25);
+}
+
+.slick-next {
+    right: 0;
+    top: 45%;
+}
+
+.slick-prev {
+    left: 0;
+    top: 45%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #b4b4b4;
 }
 
 header {
@@ -172,6 +199,7 @@ header {
                 font-size: p(18);
                 line-height: p(22);
                 color: #FFFFFF;
+                transition: all .5s;
 
                 &:hover {
                     color: #A9D18E;
@@ -195,6 +223,7 @@ header {
                     margin-right: p(5);
                     margin-left: p(-25);
                     content: '[';
+                    transform: translateX(20px);
                     transition: transform .3s, opacity .2s;
                     display: inline-block;
                     opacity: 0;
@@ -206,6 +235,7 @@ header {
                     margin-left: p(5);
                     margin-right: p(-25);
                     content: ']';
+                    transform: translateX(-20px);
                     transition: transform .3s, opacity .2s;
                     display: inline-block;
                     opacity: 0;
@@ -227,6 +257,21 @@ header {
     left: 0;
     width: 100%;
     z-index: 111;
+    padding: p(8) 0;
+
+    .logo {
+        a {
+            img {
+                width: p(130);
+                height: p(40);
+
+                @include TB {
+                    width: t(130);
+                    height: t(40);
+                }
+            }
+        }
+    }
 }
 
 .stickyMB {
@@ -259,7 +304,7 @@ header {
         }
 
         h1 {
-            font-family: 'Montserrat';
+            font-family: "Montserrat-semibold";
             font-weight: 600;
             font-size: p(64);
             line-height: p(78);
@@ -305,7 +350,7 @@ header {
     }
 
     p {
-        font-family: 'Montserrat';
+        font-family: 'Montserrat-light';
         font-style: normal;
         font-weight: 400;
         font-size: p(18);
@@ -319,8 +364,14 @@ header {
             margin-bottom: m(25);
         }
 
+        b {
+            font-family: "Montserrat-semibold";
+        }
+
         span {
             color: #A9D18E;
+            font-weight: 600;
+            font-family: "Montserrat-semibold";
         }
     }
 

@@ -17,17 +17,17 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: p(40) 0;
+        padding: p(10) 0;
 
 
         @include MB {
-            padding: m(25) 0;
+            padding: m(10) 0;
         }
 
         .logo {
             img {
-                width: p(210);
-                height: p(80);
+                width: p(160);
+                height: p(60);
 
                 @include MB {
                     width: 50%;
@@ -42,13 +42,14 @@ footer {
                 font-weight: 400;
                 font-size: p(20);
                 line-height: p(24);
-                margin-bottom: p(20);
+                margin-bottom: p(10);
                 color: #FFFFFF;
 
                 @include MB {
                     font-size: m(16);
                     line-height: m(20);
                     margin-bottom: m(10);
+                    display: none;
                 }
 
             }
@@ -65,6 +66,15 @@ footer {
 
                 a {
                     display: block;
+                    transition: all .3s linear;
+
+                    img {
+                        &:hover {
+                            filter: invert(38%) sepia(90%) saturate(4444%) hue-rotate(136deg) brightness(91%) contrast(84%);
+                        }
+
+                    }
+
                 }
             }
         }

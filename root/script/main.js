@@ -1,4 +1,16 @@
 $(document).ready(function () {
+  // Loading animation
+
+  $(window).on("load", function () {
+    setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+  });
+  function removeLoader() {
+    $("#loadingDiv").fadeOut(500, function () {
+      // fadeOut complete. Remove the loading div
+      $("#loadingDiv").remove(); //makes page more lightweight
+    });
+  }
+
   $(".box_clients").slick({
     dots: true,
     infinite: false,
@@ -8,7 +20,7 @@ $(document).ready(function () {
     speed: 600,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1024,
         settings: {
           arrows: false,
           slidesToShow: 3,
@@ -18,9 +30,10 @@ $(document).ready(function () {
       {
         breakpoint: 620,
         settings: {
-          arrows: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          arrows: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: false,
         },
       },
     ],
@@ -29,18 +42,6 @@ $(document).ready(function () {
   $(".menu-toggle").click(function () {
     $("nav").toggleClass("active");
   });
-
-// Loading animation
-
-  $(window).on('load', function(){
-    setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
-  });
-  function removeLoader(){
-      $( "#loadingDiv" ).fadeOut(500, function() {
-        // fadeOut complete. Remove the loading div
-        $( "#loadingDiv" ).remove(); //makes page more lightweight 
-    });  
-  }
 });
 
 // ==============  Modal ==================
@@ -49,13 +50,13 @@ const trigger = document.querySelector(".trigger");
 const closeButton = document.querySelector(".close-button");
 
 function toggleModal() {
-    modal.classList.toggle("show-modal");
+  modal.classList.toggle("show-modal");
 }
 
 function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
+  if (event.target === modal) {
+    toggleModal();
+  }
 }
 
 trigger.addEventListener("click", toggleModal);

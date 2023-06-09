@@ -5,6 +5,21 @@
   src: url("../assets/fonts/static/Montserrat-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Montserrat-light";
+  src: url("../assets/fonts/static/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url("../assets/fonts/static/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-semibold";
+  src: url("../assets/fonts/static/Montserrat-SemiBold.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -60,7 +75,7 @@ li {
 
 .wrapper_header_mb {
   background: #000;
-  padding: 2.89855vw 0;
+  padding: 1.93237vw 0;
 }
 
 @media (min-width: 1025px) {
@@ -88,16 +103,16 @@ li {
 }
 
 .wrapper_header_mb .header_mobile .logo a img {
-  width: 32.85024vw;
-  height: 12.56039vw;
+  width: 30.43478vw;
+  height: 10.14493vw;
 }
 
 .wrapper_header_mb .header_mobile nav {
   position: absolute;
   width: 100%;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 60px);
   background: #252525;
-  top: 19.32367vw;
+  top: 14.49275vw;
   left: -100%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -173,13 +188,38 @@ li {
 }
 
 .wrapper_header_mb .header_mobile .menu-toggle {
-  width: 10.14493vw;
-  height: 10.14493vw;
+  width: 7.72947vw;
+  height: 7.72947vw;
 }
 
 .wrapper_header_mb .header_mobile .menu-toggle img {
   width: 100%;
   height: auto;
+}
+
+.slick-arrow {
+  z-index: 1;
+  width: 8.45411vw;
+  height: 8.45411vw;
+}
+
+.slick-arrow:before {
+  font-size: 6.03865vw;
+}
+
+.slick-next {
+  right: 0;
+  top: 45%;
+}
+
+.slick-prev {
+  left: 0;
+  top: 45%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #b4b4b4;
 }
 
 header {
@@ -241,6 +281,8 @@ header .menu li a {
   font-size: 1.25vw;
   line-height: 1.52778vw;
   color: #FFFFFF;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 header .menu li a:hover {
@@ -265,6 +307,8 @@ header .menu li a::before {
   margin-right: 0.34722vw;
   margin-left: -1.73611vw;
   content: '[';
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
   -webkit-transition: opacity .2s, -webkit-transform .3s;
   transition: opacity .2s, -webkit-transform .3s;
   transition: transform .3s, opacity .2s;
@@ -279,6 +323,8 @@ header .menu li a::after {
   margin-left: 0.34722vw;
   margin-right: -1.73611vw;
   content: ']';
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
   -webkit-transition: opacity .2s, -webkit-transform .3s;
   transition: opacity .2s, -webkit-transform .3s;
   transition: transform .3s, opacity .2s;
@@ -300,6 +346,19 @@ header .menu li a::after {
   left: 0;
   width: 100%;
   z-index: 111;
+  padding: 0.55556vw 0;
+}
+
+.sticky .logo a img {
+  width: 9.02778vw;
+  height: 2.77778vw;
+}
+
+@media (min-width: 621px) and (max-width: 1024px) {
+  .sticky .logo a img {
+    width: 13.10484vw;
+    height: 4.03226vw;
+  }
 }
 
 .stickyMB {
@@ -337,7 +396,7 @@ header .menu li a::after {
 }
 
 .banner .title h1 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat-semibold";
   font-weight: 600;
   font-size: 4.44444vw;
   line-height: 5.41667vw;
@@ -388,7 +447,7 @@ header .menu li a::after {
 }
 
 .banner p {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-light';
   font-style: normal;
   font-weight: 400;
   font-size: 1.25vw;
@@ -405,8 +464,14 @@ header .menu li a::after {
   }
 }
 
+.banner p b {
+  font-family: "Montserrat-semibold";
+}
+
 .banner p span {
   color: #A9D18E;
+  font-weight: 600;
+  font-family: "Montserrat-semibold";
 }
 
 .banner .button {

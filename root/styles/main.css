@@ -499,7 +499,7 @@ li {
 }
 
 .wrapper_service .content_main li {
-  margin-bottom: 3.47222vw;
+  margin-bottom: 2.08333vw;
 }
 
 @media (max-width: 620px) {
@@ -1208,8 +1208,6 @@ li {
 @media (max-width: 620px) {
   .wrapper_work .tabs_box {
     width: 100%;
-    display: inline-block;
-    text-align: center;
   }
 }
 

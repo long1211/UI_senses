@@ -201,6 +201,34 @@ header {
                 color: #FFFFFF;
                 transition: all .5s;
 
+                &.active {
+                    color: #A9D18E;
+
+                    &::before {
+                        width: p(20);
+                        text-align: right;
+                        margin-right: p(5);
+                        margin-left: p(-25);
+                        content: '[';
+                        transform: translateX(0);
+                        transition: transform .3s, opacity .2s;
+                        display: inline-block;
+                        opacity: 1;
+                    }
+
+                    &::after {
+                        width: p(20);
+                        text-align: left;
+                        margin-left: p(5);
+                        margin-right: p(-25);
+                        content: ']';
+                        transform: translateX(0);
+                        transition: transform .3s, opacity .2s;
+                        display: inline-block;
+                        opacity: 1;
+                    }
+                }
+
                 &:hover {
                     color: #A9D18E;
                 }
@@ -258,11 +286,13 @@ header {
     width: 100%;
     z-index: 111;
     padding: p(8) 0;
-    @include TB{
+
+    @include TB {
         padding: t(8) 0;
     }
-    .box_header{
-        @include TB{
+
+    .box_header {
+        @include TB {
             height: t(40);
         }
     }

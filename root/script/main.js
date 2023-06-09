@@ -10,6 +10,12 @@ $(document).ready(function () {
       $("#loadingDiv").remove(); //makes page more lightweight
     });
   }
+  // Smooth scroll
+  //Smooth scrolling with links
+  $("a[href^=\\#]").on("click", function (event) {
+    event.preventDefault();
+    $("html,body").animate({ scrollTop: $(this.hash).offset().top }, 700);
+  });
 
   $(".box_clients").slick({
     dots: true,
@@ -43,6 +49,19 @@ $(document).ready(function () {
     $("nav").toggleClass("active");
   });
 });
+// ================ Active menu scroll =================
+
+$(window)
+  .scroll(function () {
+    const scrollDistance = $(window).scrollTop();
+    $(".page-section").each(function (i) {
+      if ($(this).position().top - 300 <= scrollDistance) {
+        $(".menu li a.active").removeClass("active");
+        $(".menu li a").eq(i).addClass("active");
+      }
+    });
+  })
+  .scroll();
 
 // ==============  Modal ==================
 const modal = document.querySelector(".modal");

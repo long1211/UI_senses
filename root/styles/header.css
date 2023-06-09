@@ -285,6 +285,42 @@ header .menu li a {
   transition: all .5s;
 }
 
+header .menu li a.active {
+  color: #A9D18E;
+}
+
+header .menu li a.active::before {
+  width: 1.38889vw;
+  text-align: right;
+  margin-right: 0.34722vw;
+  margin-left: -1.73611vw;
+  content: '[';
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: opacity .2s, -webkit-transform .3s;
+  transition: opacity .2s, -webkit-transform .3s;
+  transition: transform .3s, opacity .2s;
+  transition: transform .3s, opacity .2s, -webkit-transform .3s;
+  display: inline-block;
+  opacity: 1;
+}
+
+header .menu li a.active::after {
+  width: 1.38889vw;
+  text-align: left;
+  margin-left: 0.34722vw;
+  margin-right: -1.73611vw;
+  content: ']';
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: opacity .2s, -webkit-transform .3s;
+  transition: opacity .2s, -webkit-transform .3s;
+  transition: transform .3s, opacity .2s;
+  transition: transform .3s, opacity .2s, -webkit-transform .3s;
+  display: inline-block;
+  opacity: 1;
+}
+
 header .menu li a:hover {
   color: #A9D18E;
 }

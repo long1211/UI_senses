@@ -369,7 +369,7 @@
 
     .content_main {
         li {
-            margin-bottom: p(50);
+            margin-bottom: p(30);
 
             @include MB {
                 margin-bottom: m(25);
@@ -958,8 +958,6 @@
 
         @include MB {
             width: 100%;
-            display: inline-block;
-            text-align: center;
         }
 
         .tablinks {

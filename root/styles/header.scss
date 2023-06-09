@@ -258,6 +258,14 @@ header {
     width: 100%;
     z-index: 111;
     padding: p(8) 0;
+    @include TB{
+        padding: t(8) 0;
+    }
+    .box_header{
+        @include TB{
+            height: t(40);
+        }
+    }
 
     .logo {
         a {

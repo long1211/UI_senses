@@ -349,6 +349,18 @@ header .menu li a::after {
   padding: 0.55556vw 0;
 }
 
+@media (min-width: 621px) and (max-width: 1024px) {
+  .sticky {
+    padding: 0.80645vw 0;
+  }
+}
+
+@media (min-width: 621px) and (max-width: 1024px) {
+  .sticky .box_header {
+    height: 4.03226vw;
+  }
+}
+
 .sticky .logo a img {
   width: 9.02778vw;
   height: 2.77778vw;

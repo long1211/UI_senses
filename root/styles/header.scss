@@ -320,32 +320,8 @@ header {
     z-index: 111;
 }
 
-@-webkit-keyframes slidein {
-    from {
-        background-position: top;
-        background-size: 3500px;
-    }
 
-    to {
-        background-position: -50px 0px;
-        background-size: 2000px;
-    }
-}
-
-@keyframes slidein {
-    from {
-        background-position: top;
-        background-size: 3500px;
-    }
-
-    to {
-        background-position: -50px 0px;
-        background-size: 2000px;
-    }
-
-}
-
-
+  
 
 /// Banner
 .banner {
@@ -354,17 +330,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    -webkit-animation: slidein 60s;
-    animation: slidein 60s;
-
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
 
     @include MB {
         padding: m(50) 0 m(60) 0;

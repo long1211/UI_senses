@@ -417,28 +417,6 @@ header .menu li a::after {
   z-index: 111;
 }
 
-@-webkit-keyframes slidein {
-  from {
-    background-position: top;
-    background-size: 3500px;
-  }
-  to {
-    background-position: -50px 0px;
-    background-size: 2000px;
-  }
-}
-
-@keyframes slidein {
-  from {
-    background-position: top;
-    background-size: 3500px;
-  }
-  to {
-    background-position: -50px 0px;
-    background-size: 2000px;
-  }
-}
-
 .banner {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../assets/images/banner.jpg");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/images/banner.jpg");
@@ -446,14 +424,6 @@ header .menu li a::after {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  -webkit-animation: slidein 60s;
-  animation: slidein 60s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
 }
 
 @media (max-width: 620px) {

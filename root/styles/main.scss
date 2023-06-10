@@ -416,35 +416,14 @@
     }
 }
 
-@keyframes slidein {
-    from {
-        background-position: top;
-        background-size: 3500px;
-    }
 
-    to {
-        background-position: -50px 0px;
-        background-size: 2000px;
-    }
-
-}
 .wrapper_value {
     padding: p(80) 0;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/images/values.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    -webkit-animation: slidein 60s;
-    animation: slidein 60s;
 
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
     @include MB {
         padding: m(40) 0;
     }
@@ -808,18 +787,6 @@
 }
 
 // =================================
-@keyframes slideinEvent {
-    from {
-        background-position: top;
-        background-size: 1200px;
-    }
-
-    to {
-        background-position: -50px 0px;
-        background-size: 1000px;
-    }
-
-}
 .wrapper_event {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -834,10 +801,7 @@
         background-position: center;
         background-repeat: no-repeat;
         padding: p(108) p(81) p(108) p(160);
-        animation: slideinEvent 60s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
+
         @include MB {
             padding: m(25) m(20);
         }
@@ -894,10 +858,7 @@
         background-position: center;
         background-repeat: no-repeat;
         padding: p(108) p(160);
-        animation: slideinEvent 60s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
+
         @include MB {
             padding: m(25) m(20);
         }

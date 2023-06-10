@@ -550,28 +550,6 @@ li {
   }
 }
 
-@-webkit-keyframes slidein {
-  from {
-    background-position: top;
-    background-size: 3500px;
-  }
-  to {
-    background-position: -50px 0px;
-    background-size: 2000px;
-  }
-}
-
-@keyframes slidein {
-  from {
-    background-position: top;
-    background-size: 3500px;
-  }
-  to {
-    background-position: -50px 0px;
-    background-size: 2000px;
-  }
-}
-
 .wrapper_value {
   padding: 5.55556vw 0;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../assets/images/values.jpg");
@@ -579,14 +557,6 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-animation: slidein 60s;
-  animation: slidein 60s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
 }
 
 @media (max-width: 620px) {
@@ -1022,28 +992,6 @@ li {
   color: #A9D18E;
 }
 
-@-webkit-keyframes slideinEvent {
-  from {
-    background-position: top;
-    background-size: 1200px;
-  }
-  to {
-    background-position: -50px 0px;
-    background-size: 1000px;
-  }
-}
-
-@keyframes slideinEvent {
-  from {
-    background-position: top;
-    background-size: 1200px;
-  }
-  to {
-    background-position: -50px 0px;
-    background-size: 1000px;
-  }
-}
-
 .wrapper_event {
   display: -ms-grid;
   display: grid;
@@ -1064,14 +1012,6 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   padding: 7.5vw 5.625vw 7.5vw 11.11111vw;
-  -webkit-animation: slideinEvent 60s;
-          animation: slideinEvent 60s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
 }
 
 @media (max-width: 620px) {
@@ -1138,14 +1078,6 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   padding: 7.5vw 11.11111vw;
-  -webkit-animation: slideinEvent 60s;
-          animation: slideinEvent 60s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
 }
 
 @media (max-width: 620px) {

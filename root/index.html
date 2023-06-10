@@ -648,6 +648,56 @@
     <script src="./libs/jquery.mkinfinite.js"></script>
     <script src="./script/main.js"></script>
     <script>
+        $(document).ready(function() {
+              // ======================
+  $("#about").mkinfinite({
+    imagesList: new Array(
+      "https://images.unsplash.com/photo-1685946900453-8154d1154afc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2371&q=80",
+      "https://images.unsplash.com/photo-1686226347032-b82efa11af93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2831&q=80"
+    ),
+    isFixedBG: false,
+    imagesRatio: 1.5,
+    animationTime: 6000,
+    animationInterval: 10,
+  });
+
+    // ======================
+    $("#values").mkinfinite({
+      imagesList: new Array(
+        "https://images.unsplash.com/photo-1685946900453-8154d1154afc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2371&q=80",
+        "https://images.unsplash.com/photo-1686226347032-b82efa11af93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2831&q=80"
+      ),
+      isFixedBG: false,
+      imagesRatio: 1.5,
+      animationTime: 6000,
+      animationInterval: 10,
+    });
+      // ======================
+      $("#event").mkinfinite({
+        imagesList: new Array(
+          "https://images.unsplash.com/photo-1685946900453-8154d1154afc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2371&q=80",
+          "https://images.unsplash.com/photo-1686226347032-b82efa11af93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2831&q=80"
+        ),
+        isFixedBG: false,
+        imagesRatio: 1.5,
+        animationTime: 6000,
+        animationInterval: 10,
+      });
+        // ======================
+        $("#virtual").mkinfinite({
+          imagesList: new Array(
+            "https://images.unsplash.com/photo-1686226347032-b82efa11af93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2831&q=80",
+            "https://images.unsplash.com/photo-1685946900453-8154d1154afc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2371&q=80",
+           
+          ),
+          isFixedBG: false,
+          imagesRatio: 1.5,
+          animationTime: 6000,
+          animationInterval: 10,
+        });
+        })
+    </script>
+    <script>
         new WOW().init();
     </script>
 </body>

@@ -418,16 +418,20 @@ header .menu li a::after {
 }
 
 .banner {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../assets/images/banner.jpg");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/images/banner.jpg");
-  padding: 12.5vw 0 18.75vw 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  overflow: hidden;
+}
+
+.banner .content_banner {
+  padding: 12.5vw 0 18.75vw 0;
 }
 
 @media (max-width: 620px) {
-  .banner {
+  .banner .content_banner {
     padding: 12.07729vw 0 14.49275vw 0;
   }
 }

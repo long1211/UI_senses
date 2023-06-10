@@ -419,7 +419,6 @@
 
 .wrapper_value {
     padding: p(80) 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/images/values.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -794,17 +793,21 @@
     @include MB {
         display: block;
     }
-
-    .management {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/images/event.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+    .content_event{
         padding: p(108) p(81) p(108) p(160);
-
         @include MB {
             padding: m(25) m(20);
         }
+    }
+    .management {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      
+   
+
+       
 
         h2 {
             font-family: 'Montserrat';
@@ -853,15 +856,11 @@
     }
 
     .vitural {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/images/virtual.jpg");
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding: p(108) p(160);
 
-        @include MB {
-            padding: m(25) m(20);
-        }
 
         h2 {
             font-family: 'Montserrat';

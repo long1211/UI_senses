@@ -552,8 +552,6 @@ li {
 
 .wrapper_value {
   padding: 5.55556vw 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../assets/images/values.jpg");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/images/values.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1005,19 +1003,22 @@ li {
   }
 }
 
-.wrapper_event .management {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../assets/images/event.jpg");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/images/event.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.wrapper_event .content_event {
   padding: 7.5vw 5.625vw 7.5vw 11.11111vw;
 }
 
 @media (max-width: 620px) {
-  .wrapper_event .management {
+  .wrapper_event .content_event {
     padding: 6.03865vw 4.83092vw;
   }
+}
+
+.wrapper_event .management {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .wrapper_event .management h2 {
@@ -1072,18 +1073,11 @@ li {
 }
 
 .wrapper_event .vitural {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../assets/images/virtual.jpg");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/images/virtual.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 7.5vw 11.11111vw;
-}
-
-@media (max-width: 620px) {
-  .wrapper_event .vitural {
-    padding: 6.03865vw 4.83092vw;
-  }
 }
 
 .wrapper_event .vitural h2 {
